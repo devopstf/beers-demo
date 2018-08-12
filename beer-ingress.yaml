@@ -16,14 +16,17 @@ spec:
         backend:
           serviceName: echoserver
           servicePort: 8080
-  - host: beers.info
+  - host: canaryislandsbeers.es
     http:
       paths:
-      - path: /dorada
+      - path: /
         backend:
           serviceName: dorada
           servicePort: 80
-      - path: /mahou
+  - host: madridbeers.es
+    http:
+      paths:
+      - path: /
         backend:
           serviceName: mahou
           servicePort: 80
