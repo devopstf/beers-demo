@@ -30,4 +30,11 @@ spec:
         backend:
           serviceName: mahou
           servicePort: 80
+  - host: beers.info
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: dorada
+          servicePort: 80
 

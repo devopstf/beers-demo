@@ -1,3 +1,2 @@
-FROM nginx:alpine
-EXPOSE 8080
+FROM devopsman/nginx:peugeot
 COPY html /usr/share/nginx/html
