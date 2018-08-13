@@ -12,29 +12,33 @@ spec:
   - host: myminikube.info
     http:
       paths:
-      - path: /
+      - path: "/"
         backend:
           serviceName: echoserver
           servicePort: 8080
   - host: canaryislandsbeers.es
     http:
       paths:
-      - path: /
+      - path: "/"
         backend:
           serviceName: dorada
           servicePort: 80
   - host: madridbeers.es
     http:
       paths:
-      - path: /
+      - path: "/"
         backend:
           serviceName: mahou
           servicePort: 80
   - host: beers.info
     http:
       paths:
-      - path: /
+      - path: "/dorada"
         backend:
           serviceName: dorada
+          servicePort: 80
+      - path: "/mahou"
+        backend:
+          serviceName: mahou
           servicePort: 80
 
